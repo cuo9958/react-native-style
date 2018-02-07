@@ -1,0 +1,19 @@
+{
+  "name": "react-native-style",
+  "version": "1.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": ""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cuo9958/react-native-style.git"
+  },
+  "author": "545570335@qq.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cuo9958/react-native-style/issues"
+  },
+  "homepage": "https://github.com/cuo9958/react-native-style#readme"
+}
