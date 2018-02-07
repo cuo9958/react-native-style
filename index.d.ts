@@ -23,7 +23,66 @@ import {
     ActivityIndicatorProperties,
 } from 'react-native';
 
-export interface ButtonProps extends TouchableWithoutFeedbackProps {
-
+export interface LoadingProps {
+    color?: string,
+    size?: string
 }
+export interface ButtonProps extends TouchableWithoutFeedbackProps {
+    /**
+     * 按钮显示的文字
+     */
+    value: string,
+    /**
+     * 是否可点击
+     */
+    disabled?: boolean,
+    /**
+     * 按钮使用的皮肤
+     */
+    theme?: string,
+    /**
+     * 按钮的样式
+     */
+    style?: StyleProp<ViewStyle>,
+    /**
+     * 是否展示loading
+     */
+    loading?: boolean,
+    /**
+     * loading的样式
+     */
+    loadingStyle?: StyleProp<ViewStyle>,
+    /**
+     * loading组件的参数
+     */
+    loadingProps?: LoadingProps,
+    /**
+     * 按钮的点击事件
+     */
+    onPress?(): void
+}
+/**
+ * 自定义的按钮
+ */
 export class Button extends React.Component<ButtonProps, any> { }
+
+
+interface IconProps {
+    /**
+     * 图标的图片地址,require或者远程地址
+     */
+    name: string,
+    /**
+     * 图标的宽高
+     */
+    width?: number,
+    /**
+     * 图标的点击事件
+     */
+    onPress?(): void
+}
+/**
+ * 自定义的图标
+ */
+export class Icon extends React.Component<IconProps, any> { }
+
