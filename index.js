@@ -1,9 +1,11 @@
-import Button from './lib/Button'
-import Icon from './lib/Icon'
-import Div from './lib/Div'
+import button from './lib/Button'
+import icon from './lib/Icon'
+import div from './lib/Div'
+import span from './lib/Span'
 
 export default {
-    Button,
-    Icon,
-    Div
+    button,
+    icon,
+    div,
+    span
 }
