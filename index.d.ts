@@ -45,6 +45,10 @@ export interface ButtonProps extends TouchableWithoutFeedbackProps {
      */
     style?: StyleProp<ViewStyle>,
     /**
+     * 图标
+     */
+    icon?:any,
+    /**
      * 是否展示loading
      */
     loading?: boolean,
@@ -64,7 +68,7 @@ export interface ButtonProps extends TouchableWithoutFeedbackProps {
 /**
  * 自定义的按钮
  */
-export class Button extends React.Component<ButtonProps, any> { }
+export class button extends React.Component<ButtonProps, any> { }
 
 
 interface IconProps {
@@ -84,5 +88,5 @@ interface IconProps {
 /**
  * 自定义的图标
  */
-export class Icon extends React.Component<IconProps, any> { }
+export class icon extends React.Component<IconProps, any> { }
 
